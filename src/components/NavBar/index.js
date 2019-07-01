@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link, graphql, StaticQuery} from 'gatsby'
 import SearchBox from '../SearchBox'
+import Logo from '../../assets/img/bp-logo-header.png'
 
 const NavBar = ({toggleNavbar, isActive}) => (
   <StaticQuery
@@ -12,10 +13,10 @@ const NavBar = ({toggleNavbar, isActive}) => (
             }
         `}
     render={data => (
-      <nav className='navbar is-fixed-top' aria-label='main navigation'>
+      <nav className='navbar is-fixed-top is-spaced' aria-label='main navigation'>
         <div className='navbar-brand'>
           <Link to='/' className='navbar-item'>
-            <strong>Brix + Partners LLC</strong>
+            <img src={Logo} alt='Home' height='200' />
           </Link>
           <button
             className={`button navbar-burger ${isActive ? 'is-active' : ''}`}
@@ -29,24 +30,137 @@ const NavBar = ({toggleNavbar, isActive}) => (
         </div>
         <div className={`navbar-menu ${isActive ? 'is-active' : ''}`} id='navMenu'>
 
+          <div className='navbar-start'>
+            US-Steuerberatung
+          </div>
+
           <div className='navbar-end'>
-            <SearchBox searchIndex={data.siteSearchIndex.index} />
-            <Link className='navbar-item' to='/about'>
-                            About
-            </Link>
-            <Link className='navbar-item' to='/pricing'>
-                            Pricing
-            </Link>
-            <Link className='navbar-item' to='/blog'>
-                            Blog
-            </Link>
+            
+            <div className='navbar-item has-dropdown is-hoverable'>
+              <a className='navbar-link is-arrowless'>
+                <Link to='/kanzlei'>
+                  Kanzlei
+                </Link>
+              </a>
+              <div className='navbar-dropdown is-boxed'>
+                <a className='navbar-item'>
+                  <Link to='/partner'>
+                    Partner
+                  </Link>
+                </a>
+                <a className='navbar-item'>
+                  <Link to='/mitarbeiter'>
+                    Mitarbeiter
+                  </Link>
+                </a>
+              </div>
+            </div>
+
+            <div className='navbar-item has-dropdown is-hoverable'>
+              <a className='navbar-link is-arrowless'>
+                Leistungsumfang
+              </a>
+              <div className='navbar-dropdown is-boxed'>
+                <a className='navbar-item'>
+                  <Link to='/laufende-steuerberatung'>
+                    Laufende Steuerberatung
+                  </Link>
+                </a>
+                <a className='navbar-item'>
+                  <Link to='/buchfuehrung-und-bilanzierung'>
+                    Buchführung und Bilanzierung
+                  </Link>
+                </a>
+                <a className='navbar-item'>
+                  <Link to='/gutachterliche-taetigkeiten'>
+                    Gutachterliche Tätigkeiten
+                  </Link>
+                </a>
+                <a className='navbar-item'>
+                  <Link to='/unternehmerliche-realisierung'>
+                    Unternehmerliche Realisierung
+                  </Link>
+                </a>
+                <a className='navbar-item'>
+                  <Link to='/unternehmungsnachfolge'>
+                    Unternehmensnachfolge
+                  </Link>
+                </a>
+                <a className='navbar-item'>
+                  <Link to='/erbschafts-und-schenkungsplanung'>
+                    Erbschafts- und Schenkungsplanung
+                  </Link>
+                </a>
+              </div>
+            </div>
+
+            <div className='navbar-item has-dropdown is-hoverable'>
+              <a className='navbar-link is-arrowless'>
+                <Link to='/news-und-events'>
+                  News & Events
+                </Link>
+              </a>
+              <div className='navbar-dropdown is-boxed'>
+                <a className='navbar-item'>
+                  <Link to='/newsletter'>
+                    Newsletter
+                  </Link>
+                </a>
+                <a className='navbar-item'>
+                  <Link to='/publikationen'>
+                    Publikationen
+                  </Link>
+                </a>
+                <a className='navbar-item'>
+                  <Link to='/veranstaltungen'>
+                    Veranstaltungen
+                  </Link>
+                </a>
+                <a className='navbar-item'>
+                  <Link to='/vlogs'>
+                    Vlogs
+                  </Link>
+                </a>
+              </div>
+            </div>
+
+            <div className='navbar-item has-dropdown is-hoverable'>
+              <a className='navbar-link is-arrowless'>
+                <Link to='/karriere'>
+                  Karriere
+                </Link>
+              </a>
+              <div className='navbar-dropdown is-boxed'>
+                <a className='navbar-item'>
+                  <Link to='/berufserfahrene'>
+                    Berufserfahrene
+                  </Link>
+                </a>
+                <a className='navbar-item'>
+                  <Link to='/berufseinsteiger'>
+                    Berufseinsteiger
+                  </Link>
+                </a>
+                <a className='navbar-item'>
+                  <Link to='/studierende-und-absolventen'>
+                    Studierende und Absolventen
+                  </Link>
+                </a>
+                <a className='navbar-item'>
+                  <Link to='/alumni'>
+                    Alumni
+                  </Link>
+                </a>
+              </div>
+            </div>
+
             <div className='navbar-item'>
               <div className='field is-grouped'>
                 <p className='control'>
                   <Link
                     className='button is-primary is-outlined'
                     to='/contact'>
-                            Contact Us
+                            ENG | GER
                   </Link>
                 </p>
               </div>
