@@ -18,15 +18,18 @@ const NavBar = ({toggleNavbar, isActive}) => (
           <Link to='/' className='navbar-item'>
             <img src={Logo} alt='Home' height='200' />
           </Link>
-          <button
-            className={`button navbar-burger ${isActive ? 'is-active' : ''}`}
+          <a
+            role='button'
+            arial-label='menu'
+            aria-expanded='false'
+            className={`navbar-burger ${isActive ? 'is-active' : ''}`}
             data-target='navMenu'
             onClick={toggleNavbar}
           >
             <span />
             <span />
             <span />
-          </button>
+          </a>
         </div>
         <div className={`navbar-menu ${isActive ? 'is-active' : ''}`} id='navMenu'>
 
