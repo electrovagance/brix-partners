@@ -1,5 +1,9 @@
 const config = require('./config')
 
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 
 module.exports = {
@@ -26,6 +30,9 @@ module.exports = {
         path: `${__dirname}/src/assets/img`,
         name: 'uploads',
       },
+    },
+    {
+      resolve: 'gatsby-plugin-playground',
     },
     {
       resolve: 'gatsby-source-filesystem',
