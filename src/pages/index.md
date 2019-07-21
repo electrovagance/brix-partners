@@ -11,6 +11,10 @@ heading: Lorem ipsum dolor sit amet
 description: >-
   Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
   adipisci velit...
+hero:
+  welcome: Hero placeholder 1
+  welcome_subtitle: Hero placeholder 2
+  background_image: /img/jonathan-pease-1nlhZy86uPU-unsplash.jpg
 offerings:
   blurbs:
     - image: /img/coffee.png
