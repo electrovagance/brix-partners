@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 
 const HomePageTemplate = ({
   title,
+  hero,
   heading,
   description,
   offerings,
@@ -24,31 +25,35 @@ const HomePageTemplate = ({
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <div className='section'>
-                <h1 className='title'>
-                  {title}
+                <h1 className='title is-2'>
+                  {hero.welcome}
                 </h1>
+                <h3 className='subtitle is-4'>
+                  {hero.welcome_subtitle}
+                </h3>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section className='section section--gradient'>
       <div className='container'>
-
         <div className='section'>
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <div className='content'>
                 <div>
+                  {/* Kanzleiprofil + Kurzbeschreibung */}
                   <h3 className='has-text-weight-semibold is-size-2'>
                     {heading}
                   </h3>
                   <p>{description}</p>
+                  <Offerings gridItems={offerings.blurbs} />
+                  <h2 className='has-text-weight-semibold is-size-2 has-text-centered'>Erfahrungs&shy;berichte</h2>
+                  <Testimonials testimonials={testimonials} />
                 </div>
-                <Offerings gridItems={offerings.blurbs} />
-                <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
-                <Testimonials testimonials={testimonials} />
               </div>
             </div>
           </div>
@@ -60,6 +65,7 @@ const HomePageTemplate = ({
 
 HomePageTemplate.propTypes = {
   title: PropTypes.string,
+  hero: PropTypes.object,
   meta_title: PropTypes.string,
   meta_description: PropTypes.string,
   heading: PropTypes.string,

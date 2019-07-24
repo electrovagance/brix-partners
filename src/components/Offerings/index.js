@@ -1,15 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 
 const Offerings = ({ gridItems }) => (
   <div className='columns is-multiline'>
     {gridItems.map(item => (
-      <div key={item.image} className='column is-6' style={{borderRadius: '5px'}}>
+      <div key={item.image} className='column' style={{borderRadius: '5px'}}>
         <section className='section'>
-          <p className='has-text-centered'>
-            <img alt='' src={item.image} />
-          </p>
-          <p>{item.text}</p>
+          <Link to={item.link}>
+            <p className='has-text-centered has-text'>
+              <img alt='' src={item.image} />
+            </p>
+            <p className='has-text-weight-semibold has-text-centered'>{item.text}</p>
+          </Link>
         </section>
       </div>
     ))}
