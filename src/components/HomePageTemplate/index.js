@@ -2,10 +2,13 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Offerings from '../Offerings'
 import Testimonials from '../Testimonials'
+import Address from '../Address'
+import Map from '../Map'
 import PropTypes from 'prop-types'
 
 const HomePageTemplate = ({
   title,
+  title_2,
   hero,
   heading,
   description,
@@ -13,6 +16,7 @@ const HomePageTemplate = ({
   meta_title,
   meta_description,
   testimonials,
+  location,
 }) => (
   <div>
     <Helmet>
@@ -60,11 +64,32 @@ const HomePageTemplate = ({
         </div>
       </div>
     </section>
+
+    {/* Contact us */}
+    <section className='section section--gradient'>
+      <div className='container'>
+        <div className='columns'>
+          <div className='column is-10 is-offset-1'>
+
+            <div className='columns is-tablet'>
+              <div className='column is-half-tablet'>
+                <Map />
+              </div>
+              <div className='column is-centered'>
+                <Address title={title} title_2={title_2} location={location} />
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 )
 
 HomePageTemplate.propTypes = {
   title: PropTypes.string,
+  title_2: PropTypes.string,
   hero: PropTypes.object,
   meta_title: PropTypes.string,
   meta_description: PropTypes.string,
@@ -74,7 +99,7 @@ HomePageTemplate.propTypes = {
     blurbs: PropTypes.array,
   }),
   testimonials: PropTypes.array,
-
+  location: PropTypes.array,
 }
 
 export default HomePageTemplate

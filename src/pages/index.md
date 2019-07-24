@@ -1,12 +1,12 @@
 ---
 templateKey: 'home-page'
 title: Brix + Partners LLC
+title_2: U.S. Steuerberatung
 meta_title: Home
 meta_description: >-
-  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-  ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
-  venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis
-  consectetur purus sit amet fermentum.
+  Wir sind eine führende US-Steuerberatungsgesellschaft und bieten unseren Mandanten eine umfassende Beratung im US-Steuerrecht, vor dem Hintergrund des deutschen
+  Steuerrechts. Unsere Steuerberatungsgesellschaft ist seit ihrer Gründung im Jahr 1996 auf die Betreuung deutscher bzw. deutschsprachiger Mandate mit wirtschaftlichen
+  Interessen in den USA spezialisiert.
 heading: Kurzprofil
 description: >-
   Wir ist eine führende Steuerberatungskanzlei für deutsche
@@ -44,4 +44,14 @@ testimonials:
     quote: >-
       "Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et dignissim ligula. 
       Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+location:
+  contact_text: Addresse
+  address_line_1: 560 Lexington Avenue
+  address_line_2: 16th Floor
+  city: New York
+  state: New York
+  zip: 10022
+  phone: (212) 983-1550
+  fax: (212) 983-1554
+  email: info@brixcpa.com
 ---

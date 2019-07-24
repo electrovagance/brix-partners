@@ -23,6 +23,7 @@ collections:
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: "Meta Title", name: "meta_title", widget: "string"}
           - {label: "Meta Description", name: "meta_description", widget: "text"}
+          - {label: Location, name: location, widget: array, fields: [{label: Contact Text, name: contact_text,  widget: string}, {label: Titel 2, name: title_2,  widget: string}, {label: Address Line 1, name: address_line_1,  widget: string}, {label: Address Line 2, name: address_line_2,  widget: string}, {label: City, name: city,  widget: string}, {label: State, name: state,  widget: string}, {label: Zip, name: zip,  widget: number}, {label: Phone, name: phone,  widget: string}, {label: Fax, name: fax,  widget: string}, {label: Email, name: email,  widget: string}]}
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
