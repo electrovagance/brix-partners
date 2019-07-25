@@ -1,9 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
-import Twitter from '../../../static/icons/Twitter_Logo_WhiteOnImage.svg'
-import LinkedIn from '../../../static/icons/LI-in-Bug.png'
-import XING from '../../../static/icons/XING_Logo.png'
+import { Linkedin, Twitter } from 'react-feather'
 import Logo from '../../assets/img/bp-logo-footer.png'
 
 const Footer = () => {
@@ -87,14 +84,14 @@ const Footer = () => {
               <h5 className='subtitle is-6'>Datenschutz&shy;erklärung</h5>
             </Link>
             <a href='https://twitter.com/Brix_Partners' target='_blank' >
-              <img src={Twitter} alt='Twitter' width='50' />
+              <Twitter size={50} color='grey' />
             </a>
             <a href='https://www.linkedin.com/company/brix-partners-llc/about/' target='_blank' >
-              <img src={LinkedIn} alt='LinkedIn' width='50' />
+              <Linkedin size={50} color='grey' />
             </a>
-            <a href='https://www.xing.com/companies/brix+partnersllc' target='_blank' >
+            {/* <a href='https://www.xing.com/companies/brix+partnersllc' target='_blank' >
               <img src={XING} alt='XING' width='50' />
-            </a>
+            </a> */}
           </div>
         </div>
 
