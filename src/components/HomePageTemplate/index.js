@@ -1,15 +1,19 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import BackgroundImage from 'gatsby-image'
 import Offerings from '../Offerings'
 import Testimonials from '../Testimonials'
 import Address from '../Address'
 import Map from '../Map'
 import PropTypes from 'prop-types'
+import styles from './styles.module.scss'
 
 const HomePageTemplate = ({
   title,
-  title_2,
-  hero,
+  firm_subtitle,
+  hero_title,
+  hero_subtitle,
+  featured_image,
   heading,
   description,
   offerings,
@@ -19,21 +23,23 @@ const HomePageTemplate = ({
   location,
 }) => (
   <div>
+    {console.log(firm_subtitle)}
     <Helmet>
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero is-primary is-bold is-medium'>
+    <BackgroundImage fluid={featured_image} />
+    <section className='hero is-fullheight'>
       <div className='hero-body'>
         <div className='container'>
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <div className='section'>
                 <h1 className='title is-2'>
-                  {hero.welcome}
+                  {hero_title}
                 </h1>
                 <h3 className='subtitle is-4'>
-                  {hero.welcome_subtitle}
+                  {hero_subtitle}
                 </h3>
               </div>
             </div>
@@ -70,16 +76,14 @@ const HomePageTemplate = ({
       <div className='container'>
         <div className='columns'>
           <div className='column is-10 is-offset-1'>
-
             <div className='columns is-tablet'>
               <div className='column is-half-tablet'>
                 <Map />
               </div>
               <div className='column is-centered'>
-                <Address title={title} title_2={title_2} location={location} />
+                <Address title={title} subtitle={firm_subtitle} location={location} />
               </div>
             </div>
-            
           </div>
         </div>
       </div>
@@ -89,17 +93,19 @@ const HomePageTemplate = ({
 
 HomePageTemplate.propTypes = {
   title: PropTypes.string,
-  title_2: PropTypes.string,
-  hero: PropTypes.object,
+  firm_subtitle: PropTypes.string,
   meta_title: PropTypes.string,
   meta_description: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
+  hero_title: PropTypes.string,
+  hero_subtitle: PropTypes.string,
+  featured_image: PropTypes.string,
   offerings: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
   testimonials: PropTypes.array,
-  location: PropTypes.array,
+  location: PropTypes.object,
 }
 
 export default HomePageTemplate

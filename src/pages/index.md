@@ -1,23 +1,19 @@
 ---
 templateKey: 'home-page'
 title: Brix + Partners LLC
-title_2: U.S. Steuerberatung
+firm_subtitle: U.S. Steuerberatung
 meta_title: Home
 meta_description: >-
-  Wir sind eine führende US-Steuerberatungsgesellschaft und bieten unseren Mandanten eine umfassende Beratung im US-Steuerrecht, vor dem Hintergrund des deutschen
-  Steuerrechts. Unsere Steuerberatungsgesellschaft ist seit ihrer Gründung im Jahr 1996 auf die Betreuung deutscher bzw. deutschsprachiger Mandate mit wirtschaftlichen
-  Interessen in den USA spezialisiert.
+  Wir sind eine führende US-Steuerberatungskanzlei und bieten deutschen bzw. deutschsprachigen Mandanten eine umfassende Beratung im US-Steuerrecht.
 heading: Kurzprofil
 description: >-
-  Wir ist eine führende Steuerberatungskanzlei für deutsche
-  und deutschsprachige Mandanten in den USA.
-hero:
-  welcome: To grow with our clients
-  welcome_subtitle: and with the challenges they provide.
-  background_image: /img/jonathan-pease-1nlhZy86uPU-unsplash.jpg
+  Wir ist eine führende Steuerberatungskanzlei für deutsche und deutschsprachige Mandanten in den USA.
+hero_title: To grow with our clients
+hero_subtitle: and with the challenges they provide.
+featured-image: ../assets/img/jonathan-pease-1nlhZy86uPU-unsplash.jpg
 offerings:
   blurbs:
-    - image: ./img/coffee.png
+    - image: /img/coffee.png
       text: Laufende Steuerberatung
       link: /laufende-steuerberatung
     - image: /img/coffee-gear.png
@@ -45,7 +41,6 @@ testimonials:
       "Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et dignissim ligula. 
       Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 location:
-  contact_text: Addresse
   address_line_1: 560 Lexington Avenue
   address_line_2: 16th Floor
   city: New York

@@ -1,7 +1,8 @@
 {
   "name": "gatsby-starter-business",
   "description": "Gatsby Business Website Starter",
-  "author": "Vaibhav Sharma",
+  "author": "Malak Tayeh",
+  "forked-from": "Vaibhav Sharma",
   "version": "2.1.1",
   "license": "MIT",
   "scripts": {
@@ -17,6 +18,7 @@
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.2.1",
     "bulma": "^0.7.2",
     "gatsby": "^2.0.98",
+    "gatsby-image": "^2.2.7",
     "gatsby-paginate": "^1.0.17",
     "gatsby-plugin-feed": "^2.0.11",
     "gatsby-plugin-google-tagmanager": "^2.0.8",
@@ -45,6 +47,7 @@
     "react": "^16.7.0",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.7.0",
+    "react-feather": "^2.0.3",
     "react-helmet": "^5.2.0",
     "react-share": "^2.4.0",
     "uglifyjs-webpack-plugin": "^2.1.1"

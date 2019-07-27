@@ -24,15 +24,15 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
+      resolve: 'gatsby-plugin-playground',
+    },
+    {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/assets/img`,
         name: 'uploads',
       },
-    },
-    {
-      resolve: 'gatsby-plugin-playground',
     },
     {
       resolve: 'gatsby-source-filesystem',
