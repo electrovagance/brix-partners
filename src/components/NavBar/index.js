@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link, graphql, StaticQuery} from 'gatsby'
-import SearchBox from '../SearchBox'
+// import SearchBox from '../SearchBox's
 import Logo from '../../assets/img/bp-logo-header.png'
 
 const NavBar = ({toggleNavbar, isActive}) => (
@@ -32,11 +32,6 @@ const NavBar = ({toggleNavbar, isActive}) => (
           </a>
         </div>
         <div className={`navbar-menu ${isActive ? 'is-active' : ''}`} id='navMenu'>
-
-          <div className='navbar-start'>
-            US-Steuerberatung
-          </div>
-
           <div className='navbar-end'>
             
             <div className='navbar-item has-dropdown is-hoverable'>
@@ -163,7 +158,7 @@ const NavBar = ({toggleNavbar, isActive}) => (
                   <Link
                     className='button is-primary is-outlined'
                     to='/contact'>
-                            ENG | GER
+                            ENG
                   </Link>
                 </p>
               </div>

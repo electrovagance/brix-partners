@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {graphql} from 'gatsby'
+import { graphql } from 'gatsby'
 import HomePageTemplate from '../components/HomePageTemplate'
 import Layout from '../components/Layout'
 
@@ -11,8 +11,9 @@ const HomePage = ({data}) => {
     <Layout>
       <HomePageTemplate
         title={frontmatter.title}
-        title_2={frontmatter.title_2}
-        hero={frontmatter.hero}
+        hero_title={frontmatter.hero_title}
+        hero_subtitle={frontmatter.hero_subtitle}
+        featured_image={frontmatter.featured_image}
         meta_title={frontmatter.meta_title}
         meta_description={frontmatter.meta_description}
         heading={frontmatter.heading}
@@ -40,15 +41,19 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        title_2
+        firm_subtitle
         meta_title
         meta_description
         heading
         description
-        hero {
-          welcome
-          welcome_subtitle
-          background_image
+        hero_title
+        hero_subtitle
+        featured_image  {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
         offerings {
           blurbs {
@@ -62,7 +67,6 @@ export const pageQuery = graphql`
           quote
         }
         location {
-          contact_text
           address_line_1
           address_line_2
           city

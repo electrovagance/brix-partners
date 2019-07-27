@@ -1,6 +1,16 @@
 import React from 'react'
 import { Link } from 'gatsby'
+<<<<<<< HEAD
 import { Linkedin, Twitter } from 'react-feather'
+||||||| merged common ancestors
+
+import Twitter from '../../../static/icons/Twitter_Logo_WhiteOnImage.svg'
+import LinkedIn from '../../../static/icons/LI-in-Bug.png'
+import XING from '../../../static/icons/XING_Logo.png'
+=======
+import { Linkedin, Twitter } from 'react-feather'
+
+>>>>>>> home-page-ger
 import Logo from '../../assets/img/bp-logo-footer.png'
 
 const Footer = () => {
