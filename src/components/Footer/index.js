@@ -84,6 +84,7 @@ const Footer = () => {
             <Link to='/datenschutzerklaerung'>
               <h5 className='subtitle is-6'>Datenschutz&shy;erklärung</h5>
             </Link>
+            {/* External Links */}
             <a href='https://twitter.com/Brix_Partners' target='_blank' >
               <Twitter size={50} color='grey' />
             </a>

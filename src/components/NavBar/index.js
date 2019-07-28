@@ -33,122 +33,103 @@ const NavBar = ({toggleNavbar, isActive}) => (
         </div>
         <div className={`navbar-menu ${isActive ? 'is-active' : ''}`} id='navMenu'>
           <div className='navbar-end'>
-            
             <div className='navbar-item has-dropdown is-hoverable'>
-              <a className='navbar-link is-arrowless'>
-                <Link to='/kanzlei'>
+              <Link to='/kanzlei'
+                className='navbar-link is-arrowless'>
                   Kanzlei
-                </Link>
-              </a>
+              </Link>
               <div className='navbar-dropdown is-boxed'>
-                <a className='navbar-item'>
-                  <Link to='/partner'>
+                <Link to='/partner'
+                  className='navbar-item'>
                     Partner
-                  </Link>
-                </a>
-                <a className='navbar-item'>
-                  <Link to='/mitarbeiter'>
+                </Link>
+                <Link to='/mitarbeiter'
+                  className='navbar-item'>
                     Mitarbeiter
-                  </Link>
-                </a>
+                </Link>
               </div>
             </div>
 
             <div className='navbar-item has-dropdown is-hoverable'>
-              <a className='navbar-link is-arrowless'>
+              <Link className='navbar-link is-arrowless'
+                to='/'>
                 Leistungsumfang
-              </a>
+              </Link>
               <div className='navbar-dropdown is-boxed'>
-                <a className='navbar-item'>
-                  <Link to='/laufende-steuerberatung'>
+                <Link className='navbar-item'
+                  to='/laufende-steuerberatung'>
                     Laufende Steuerberatung
-                  </Link>
-                </a>
-                <a className='navbar-item'>
-                  <Link to='/buchfuehrung-und-bilanzierung'>
+                </Link>
+                <Link className='navbar-item'
+                  to='/buchfuehrung-und-bilanzierung'>
                     Buchführung und Bilanzierung
-                  </Link>
-                </a>
-                <a className='navbar-item'>
-                  <Link to='/gutachterliche-taetigkeiten'>
+                </Link>
+                <Link className='navbar-item'
+                  to='/gutachterliche-taetigkeiten'>
                     Gutachterliche Tätigkeiten
-                  </Link>
-                </a>
-                <a className='navbar-item'>
-                  <Link to='/unternehmerliche-realisierung'>
+                </Link>
+                <Link className='navbar-item'
+                  to='/unternehmerliche-realisierung'>
                     Unternehmerliche Realisierung
-                  </Link>
-                </a>
-                <a className='navbar-item'>
-                  <Link to='/unternehmungsnachfolge'>
+                </Link>
+                <Link className='navbar-item'
+                  to='/unternehmungsnachfolge'>
                     Unternehmensnachfolge
-                  </Link>
-                </a>
-                <a className='navbar-item'>
-                  <Link to='/erbschafts-und-schenkungsplanung'>
+                </Link>
+                <Link className='navbar-item'
+                  to='/erbschafts-und-schenkungsplanung'>
                     Erbschafts- und Schenkungsplanung
-                  </Link>
-                </a>
+                </Link>
               </div>
             </div>
 
             <div className='navbar-item has-dropdown is-hoverable'>
-              <a className='navbar-link is-arrowless'>
-                <Link to='/news-und-events'>
+              <Link className='navbar-link is-arrowless'
+                to='/news-und-events'>
                   News & Events
-                </Link>
-              </a>
+              </Link>
               <div className='navbar-dropdown is-boxed'>
-                <a className='navbar-item'>
-                  <Link to='/newsletter'>
+                <Link className='navbar-item'
+                  to='/newsletter'>
                     Newsletter
-                  </Link>
-                </a>
-                <a className='navbar-item'>
-                  <Link to='/publikationen'>
+                </Link>
+                <Link className='navbar-item'
+                  to='/publikationen'>
                     Publikationen
-                  </Link>
-                </a>
-                <a className='navbar-item'>
-                  <Link to='/veranstaltungen'>
+                </Link>
+                <Link className='navbar-item'
+                  to='/veranstaltungen'>
                     Veranstaltungen
-                  </Link>
-                </a>
-                <a className='navbar-item'>
-                  <Link to='/vlogs'>
+                </Link>
+                <Link className='navbar-item'
+                  to='/vlogs'>
                     Vlogs
-                  </Link>
-                </a>
+                </Link>
               </div>
             </div>
 
             <div className='navbar-item has-dropdown is-hoverable'>
-              <a className='navbar-link is-arrowless'>
-                <Link to='/karriere'>
+              <Link className='navbar-link is-arrowless'
+                to='/karriere'>
                   Karriere
-                </Link>
-              </a>
+              </Link>
               <div className='navbar-dropdown is-boxed'>
-                <a className='navbar-item'>
-                  <Link to='/berufserfahrene'>
+                <Link className='navbar-item'
+                  to='/berufserfahrene'>
                     Berufserfahrene
-                  </Link>
-                </a>
-                <a className='navbar-item'>
-                  <Link to='/berufseinsteiger'>
+                </Link>
+                <Link className='navbar-item'
+                  to='/berufseinsteiger'>
                     Berufseinsteiger
-                  </Link>
-                </a>
-                <a className='navbar-item'>
-                  <Link to='/studierende-und-absolventen'>
+                </Link>
+                <Link className='navbar-item'
+                  to='/studierende-und-absolventen'>
                     Studierende und Absolventen
-                  </Link>
-                </a>
-                <a className='navbar-item'>
-                  <Link to='/alumni'>
+                </Link>
+                <Link className='navbar-item'
+                  to='/alumni'>
                     Alumni
-                  </Link>
-                </a>
+                </Link>
               </div>
             </div>
 
