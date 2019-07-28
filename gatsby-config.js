@@ -21,11 +21,6 @@ module.exports = {
     },
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
-    {
-      resolve: 'gatsby-plugin-playground',
-    },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
@@ -43,13 +38,6 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-sitemap`,
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/assets/img`,
-        name: 'images',
-      },
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
@@ -74,6 +62,11 @@ module.exports = {
           },
         ],
       },
+    },
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-playground',
     },
     {
       resolve: 'gatsby-plugin-netlify-cms',

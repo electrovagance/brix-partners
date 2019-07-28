@@ -10,7 +10,6 @@ description: >-
   Wir ist eine führende Steuerberatungskanzlei für deutsche und deutschsprachige Mandanten in den USA.
 hero_title: To grow with our clients
 hero_subtitle: and with the challenges they provide.
-featured-image: ../assets/img/jonathan-pease-1nlhZy86uPU-unsplash.jpg
 offerings:
   blurbs:
     - image: /img/coffee.png

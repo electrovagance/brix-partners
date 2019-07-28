@@ -6,14 +6,17 @@ import Layout from '../components/Layout'
 
 const HomePage = ({data}) => {
   const {frontmatter} = data.markdownRemark
+  // saved image from GraphQL seperately from frontmatter query
+  const hero_background = data.heroImage
 
   return (
     <Layout>
+      {console.log(hero_background)}
       <HomePageTemplate
         title={frontmatter.title}
         hero_title={frontmatter.hero_title}
         hero_subtitle={frontmatter.hero_subtitle}
-        featured_image={frontmatter.featured_image}
+        hero_background={hero_background}
         meta_title={frontmatter.meta_title}
         meta_description={frontmatter.meta_description}
         heading={frontmatter.heading}
@@ -31,6 +34,7 @@ HomePage.propTypes = {
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
     }),
+    heroImage: PropTypes.string,
   }),
 }
 
@@ -48,13 +52,6 @@ export const pageQuery = graphql`
         description
         hero_title
         hero_subtitle
-        featured_image  {
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         offerings {
           blurbs {
             image
@@ -75,6 +72,13 @@ export const pageQuery = graphql`
           phone
           fax
           email
+        }
+      }
+    }
+    heroImage: file(relativePath: { eq: "jonathan-pease-1nlhZy86uPU-unsplash.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2500, grayscale: true) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }

@@ -1,19 +1,19 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import BackgroundImage from 'gatsby-image'
 import Offerings from '../Offerings'
 import Testimonials from '../Testimonials'
 import Address from '../Address'
 import Map from '../Map'
 import PropTypes from 'prop-types'
-import styles from './styles.module.scss'
+import Background from 'gatsby-image'
+// import styles from './styles.module.scss'
 
 const HomePageTemplate = ({
   title,
   firm_subtitle,
   hero_title,
   hero_subtitle,
-  featured_image,
+  hero_background,
   heading,
   description,
   offerings,
@@ -23,29 +23,29 @@ const HomePageTemplate = ({
   location,
 }) => (
   <div>
-    {console.log(firm_subtitle)}
     <Helmet>
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <BackgroundImage fluid={featured_image} />
-    <section className='hero is-fullheight'>
-      <div className='hero-body'>
-        <div className='container'>
-          <div className='columns'>
-            <div className='column is-10 is-offset-1'>
-              <div className='section'>
-                <h1 className='title is-2'>
-                  {hero_title}
-                </h1>
-                <h3 className='subtitle is-4'>
-                  {hero_subtitle}
-                </h3>
+    <section className='hero is-large'>
+      <Background fluid={hero_background.childImageSharp.fluid}>
+        <div className='hero-body'>
+          <div className='container'>
+            <div className='columns'>
+              <div className='column is-10 is-offset-1'>
+                <div className='section'>
+                  <h1 className='title is-2'>
+                    {hero_title}
+                  </h1>
+                  <h3 className='subtitle is-4'>
+                    {hero_subtitle}
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </Background>
     </section>
 
     <section className='section section--gradient'>
@@ -55,7 +55,6 @@ const HomePageTemplate = ({
             <div className='column is-10 is-offset-1'>
               <div className='content'>
                 <div>
-                  {/* Kanzleiprofil + Kurzbeschreibung */}
                   <h3 className='has-text-weight-semibold is-size-2'>
                     {heading}
                   </h3>
@@ -100,7 +99,7 @@ HomePageTemplate.propTypes = {
   description: PropTypes.string,
   hero_title: PropTypes.string,
   hero_subtitle: PropTypes.string,
-  featured_image: PropTypes.string,
+  hero_background: PropTypes.string,
   offerings: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
