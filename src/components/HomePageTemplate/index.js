@@ -5,8 +5,7 @@ import Testimonials from '../Testimonials'
 import Address from '../Address'
 import Map from '../Map'
 import PropTypes from 'prop-types'
-import Background from 'gatsby-image'
-// import styles from './styles.module.scss'
+import BackgroundImage from 'gatsby-background-image'
 
 const HomePageTemplate = ({
   title,
@@ -28,16 +27,16 @@ const HomePageTemplate = ({
       <meta name='description' content={meta_description} />
     </Helmet>
     <section className='hero is-large'>
-      <Background fluid={hero_background.childImageSharp.fluid}>
+      <BackgroundImage fluid={hero_background.childImageSharp.fluid}>
         <div className='hero-body'>
           <div className='container'>
             <div className='columns'>
               <div className='column is-10 is-offset-1'>
                 <div className='section'>
-                  <h1 className='title is-2'>
+                  <h1 className='title is-1 has-text-light'>
                     {hero_title}
                   </h1>
-                  <h3 className='subtitle is-4'>
+                  <h3 className='subtitle is-3 has-text-grey-lighter'>
                     {hero_subtitle}
                   </h3>
                 </div>
@@ -45,7 +44,7 @@ const HomePageTemplate = ({
             </div>
           </div>
         </div>
-      </Background>
+        </BackgroundImage>
     </section>
 
     <section className='section section--gradient'>

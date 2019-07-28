@@ -11,7 +11,6 @@ const HomePage = ({data}) => {
 
   return (
     <Layout>
-      {console.log(hero_background)}
       <HomePageTemplate
         title={frontmatter.title}
         hero_title={frontmatter.hero_title}
