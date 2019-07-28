@@ -44,7 +44,7 @@ const HomePageTemplate = ({
             </div>
           </div>
         </div>
-        </BackgroundImage>
+      </BackgroundImage>
     </section>
 
     <section className='section section--gradient'>
@@ -98,7 +98,7 @@ HomePageTemplate.propTypes = {
   description: PropTypes.string,
   hero_title: PropTypes.string,
   hero_subtitle: PropTypes.string,
-  hero_background: PropTypes.string,
+  hero_background: PropTypes.object,
   offerings: PropTypes.shape({
     blurbs: PropTypes.array,
   }),

@@ -33,7 +33,7 @@ HomePage.propTypes = {
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
     }),
-    heroImage: PropTypes.string,
+    heroImage: PropTypes.object,
   }),
 }
 

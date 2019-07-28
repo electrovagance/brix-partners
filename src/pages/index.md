@@ -12,22 +12,22 @@ hero_title: To grow with our clients
 hero_subtitle: and with the challenges they provide.
 offerings:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/icons8-bad-idea-100.png
       text: Laufende Steuerberatung
       link: /laufende-steuerberatung
-    - image: /img/coffee-gear.png
+    - image: /img/icons8-ledger-100.png
       text: Buchführung und Bilanzierung
       link: /buchfuehrung-und-bilanzierung
-    - image: /img/tutorials.png
+    - image: /img/icons8-tax-100.png
       text: Gutachterliche Tätigkeiten
       link: /gutachterliche-taetigkeiten
-    - image: /img/meeting-space.png
+    - image: /img/icons8-duration-finance-100.png
       text: Unternehmerliche Realisierung
       link: /unternehmerliche-realisierung
-    - image: /img/meeting-space.png
+    - image: /img/icons8-accounting-100.png
       text: Unternehmensnachfolge
       link: /unternehmungsnachfolge
-    - image: /img/meeting-space.png
+    - image: /img/icons8-debit-card-100.png
       text: Erbschafts- und Schenkungsplanung
       link: /erbschafts-und-schenkungsplanung
 testimonials:

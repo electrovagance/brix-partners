@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
 const Offerings = ({ gridItems }) => (
-  <div className='columns is-multiline'>
+  <div className='columns is-centered is-mobile is-multiline'>
     {gridItems.map(item => (
-      <div key={item.image} className='column' style={{borderRadius: '5px'}}>
+      <div key={item.image} className='column is-full-mobile is-half-tablet is-one-third-desktop is-one-quarter-fullhd' style={{borderRadius: '5px'}}>
         <section className='section'>
           <Link to={item.link}>
             <p className='has-text-centered has-text'>
