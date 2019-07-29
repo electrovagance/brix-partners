@@ -74,7 +74,7 @@ const HomePageTemplate = ({
       <div className='container'>
         <div className='columns'>
           <div className='column is-10 is-offset-1'>
-            <div className='columns is-vcentered is-variable is-8'>
+            <div className='columns is-vcentered is-variable'>
               <div className='column is-half-tablet is-two-thirds-desktop'>
                 <Map />
               </div>
