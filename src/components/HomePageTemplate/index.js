@@ -26,6 +26,7 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
+    {console.log(firm_subtitle)}
     <section className='hero is-large'>
       <BackgroundImage fluid={hero_background.childImageSharp.fluid}>
         <div className='hero-body'>
@@ -74,11 +75,11 @@ const HomePageTemplate = ({
       <div className='container'>
         <div className='columns'>
           <div className='column is-10 is-offset-1'>
-            <div className='columns is-tablet'>
-              <div className='column is-half-tablet'>
+            <div className='columns is-vcentered is-variable is-8'>
+              <div className='column is-half-tablet is-two-thirds-desktop'>
                 <Map />
               </div>
-              <div className='column is-centered'>
+              <div className='column is-offset-2-mobile'>
                 <Address title={title} subtitle={firm_subtitle} location={location} />
               </div>
             </div>

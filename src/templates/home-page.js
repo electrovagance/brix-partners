@@ -13,6 +13,7 @@ const HomePage = ({data}) => {
     <Layout>
       <HomePageTemplate
         title={frontmatter.title}
+        firm_subtitle={frontmatter.firm_subtitle}
         hero_title={frontmatter.hero_title}
         hero_subtitle={frontmatter.hero_subtitle}
         hero_background={hero_background}
