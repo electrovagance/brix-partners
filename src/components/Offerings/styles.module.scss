@@ -1,0 +1,15 @@
+@import '../../assets/sass/styles.sass';
+
+
+.change-radius {
+    // border-radius: 5px;
+    
+}
+.changeColorOnHover {
+    padding: 1em 0;
+    // border-radius: 10px;
+}
+
+.changeColorOnHover:hover {
+    background: hsl(0, 0%, 96%);
+}
