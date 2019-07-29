@@ -26,7 +26,6 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    {console.log(firm_subtitle)}
     <section className='hero is-large'>
       <BackgroundImage fluid={hero_background.childImageSharp.fluid}>
         <div className='hero-body'>

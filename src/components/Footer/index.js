@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Linkedin, Twitter } from 'react-feather'
+import { Linkedin, Twitter, XSquare} from 'react-feather'
+import styles from './styles.module.scss'
 
 import Logo from '../../assets/img/bp-logo-footer.png'
 
@@ -9,7 +10,7 @@ const Footer = () => {
     <footer className='footer'>
       <div className='container'>
 
-        <div className='columns'>
+        <div className='columns has-text-centered-mobile'>
 
           <div className='column'>
             <Link to='/'>
@@ -24,9 +25,11 @@ const Footer = () => {
               <h5 className='subtitle is-6'>Partner</h5>
             </Link>
             <Link to='/mitarbeiter'>
-              <h5 className='subtitle is-6'>Mitarbeiter</h5>
+              <h5 className={`subtitle is-6 ${styles.addPadding}`}>Mitarbeiter</h5>
             </Link>
-            <h4 className='title is-4'> Leistungs&shy;umfang</h4>
+            <Link to='/'>
+              <h4 className='title is-4'>Leistungs&shy;umfang</h4>
+            </Link>
             <Link to='/laufende-steuerberatung'>
               <h5 className='subtitle is-6'>Laufende Steuerberatung</h5>
             </Link>
@@ -43,7 +46,7 @@ const Footer = () => {
               <h5 className='subtitle is-6'>Unternehmens&shy;nachfolge</h5>
             </Link>
             <Link to='/erbschafts-und-schenkungsplanung'>
-              <h5 className='subtitle is-6'>Erbschafts- und Schenkungsplanung</h5>
+              <h5 className={`subtitle is-6 ${styles.addPadding}`}>Erbschafts- und Schenkungsplanung</h5>
             </Link>
           </div>
 
@@ -58,7 +61,7 @@ const Footer = () => {
               <h5 className='subtitle is-6'>Veranstaltungen</h5>
             </Link>
             <Link to='/vlogs'>
-              <h5 className='subtitle is-6'>Vlogs</h5>
+              <h5 className={`subtitle is-6 ${styles.addPadding}`}>Vlogs</h5>
             </Link>
             <Link to='/karriere'>
               <h4 className='title is-4'>Karriere</h4>
@@ -70,7 +73,7 @@ const Footer = () => {
               <h5 className='subtitle is-6'>Studierende & Absolventen</h5>
             </Link>
             <Link to='/alumni'>
-              <h5 className='subtitle is-6'>Alumni</h5>
+              <h5 className={`subtitle is-6 ${styles.addPadding}`}>Alumni</h5>
             </Link>
           </div>
 
@@ -82,18 +85,18 @@ const Footer = () => {
               <h5 className='subtitle is-6'>Impressum</h5>
             </Link>
             <Link to='/datenschutzerklaerung'>
-              <h5 className='subtitle is-6'>Datenschutz&shy;erklärung</h5>
+              <h5 className={`subtitle is-6 ${styles.addPadding}`}>Datenschutz&shy;erklärung</h5>
             </Link>
             {/* External Links */}
-            <a href='https://twitter.com/Brix_Partners' target='_blank' >
+            <a href='https://twitter.com/Brix_Partners' target='_blank' className={styles.iconPadding} >
               <Twitter size={50} color='grey' />
             </a>
-            <a href='https://www.linkedin.com/company/brix-partners-llc/about/' target='_blank' >
+            <a href='https://www.linkedin.com/company/brix-partners-llc/about/' target='_blank' className={styles.iconPadding} >
               <Linkedin size={50} color='grey' />
             </a>
-            {/* <a href='https://www.xing.com/companies/brix+partnersllc' target='_blank' >
-              <img src={XING} alt='XING' width='50' />
-            </a> */}
+            <a href='https://www.xing.com/companies/brix+partnersllc' target='_blank' className={styles.iconPadding} >
+              <XSquare size={50} color='grey' />
+            </a>
           </div>
         </div>
 
