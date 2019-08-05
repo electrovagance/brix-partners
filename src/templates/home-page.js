@@ -78,7 +78,7 @@ export const pageQuery = graphql`
     heroImage: file(relativePath: { eq: "jonathan-pease-1nlhZy86uPU-unsplash.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2500, grayscale: true) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
